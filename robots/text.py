@@ -20,7 +20,6 @@ def bot(cont):
             seg = pysbd.Segmenter(language='en',clean=False)
             sanitized.append(seg.segment(i))
         return sanitized
-    print('Recebi com sucesso o content: ' + cont)
     wiki_ret = get_from_wikipedia(cont)
     sanitize_ret = sanitize_content(wiki_ret)
 

@@ -1,5 +1,5 @@
 from re import search
-
+import robots.text as txt_bot
 
 
 def start():
